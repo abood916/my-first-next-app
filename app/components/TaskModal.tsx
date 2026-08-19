@@ -23,8 +23,9 @@ export default function TaskModal({onClose}: taskModalProps) {
     return (
         <div className="
         fixed inset-0 m-auto h-fit w-full
-        max-w-md rounded-xl bg-white p-6 shadow-lg">
-            <h2 className="mb-6 text-2xl font-bold">Add New Task</h2>
+        max-w-md rounded-xl bg-white p-6 shadow-lg
+        text-black">
+            <h2 className="mb-6 text-2xl font-bold bg-white text-black dark:bg-gray-900">Add New Task</h2>
 
             <input 
             className="

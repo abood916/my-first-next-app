@@ -12,10 +12,13 @@ export default function Filter({
     return (
         <div>
             <select 
-            className="rounded-lg px-4 py-2 mb-3 outline-none border border-gray-300 bg-white focus:border-blue-500"
+            className="rounded-lg px-4 py-2 mb-3 outline-none border border-gray-300 bg-white text-black dark:bg-gray-900 dark:text-white focus:border-blue-500"
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
             >
+             
+
+                
                 <option value="All">All</option>
                 <option value="Completed">Completed</option>
                 <option value="Pending">Pending</option>

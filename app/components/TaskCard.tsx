@@ -9,7 +9,7 @@ type Task = {
 
 export default function TaskCard({ task }: { task: Task }) {
   return (
-    <div className="bg-white p-5 rounded-lg shadow-md mb-4 space-y-2 ">
+    <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white p-5 rounded-lg shadow-md mb-4 space-y-2 ">
       <h2 className="text-xl font-bold mb-2">
         {task.title}
       </h2>

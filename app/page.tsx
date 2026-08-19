@@ -66,10 +66,12 @@ const highPriorityTasks = tasks.filter((task) => {
   return (
     <html>
       <body>
-        <div className="bg-gray-100">
+        <div className={darkMode 
+          ? "dark min-h-screen bg-gray-900 text-white"
+          : "bg-white text-black min-h-screen"}>
       
 
-          <div>
+          
             
             <header />
             
@@ -79,7 +81,10 @@ const highPriorityTasks = tasks.filter((task) => {
           
             <main className="p-6 ml-64">
               <h1 className="text-3xl font-bold mb-6">Mini Task Dashboard</h1>
-              <button onClick={() => setDarkMode(!darkMode)}>Dark Mode</button>
+              <button onClick={() => setDarkMode(!darkMode)}
+                className="m-5 rounded-lg bg-gray-200 px-4 py-2 text-black">
+                  {darkMode ?  "☀️ Light Mode" : "🌙 Dark Mode"}
+                </button>
               <SearchBar 
               searchTerm={searchTerm}
               setSearchTerm={setSearchTerm}
@@ -113,7 +118,7 @@ const highPriorityTasks = tasks.filter((task) => {
               )}
             </main>
           </div>
-        </div>
+        
       </body>
     </html>
   )
